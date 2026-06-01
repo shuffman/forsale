@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2019 Porsche 911 GT3 &mdash; For Sale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/listing.css">
+</head>
+<body>
+
+  <header class="listing-header">
+    <div class="container">
+      <a href="../../" class="back-link">&#8592; All Listings</a>
+    </div>
+  </header>
+
+  <div class="gallery">
+    <div class="gallery-main">
+      <img id="gallery-hero" src="images/hero.jpg" alt="2019 Porsche 911 GT3">
+    </div>
+    <div class="gallery-thumbs">
+      <button class="thumb active" onclick="setHero(this, 'images/hero.jpg')">
+        <img src="images/hero.jpg" alt="">
+      </button>
+      <button class="thumb" onclick="setHero(this, 'images/detail-1.jpg')">
+        <img src="images/detail-1.jpg" alt="">
+      </button>
+      <button class="thumb" onclick="setHero(this, 'images/detail-2.jpg')">
+        <img src="images/detail-2.jpg" alt="">
+      </button>
+      <button class="thumb" onclick="setHero(this, 'images/interior.jpg')">
+        <img src="images/interior.jpg" alt="">
+      </button>
+      <button class="thumb" onclick="setHero(this, 'images/engine.jpg')">
+        <img src="images/engine.jpg" alt="">
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <div class="container listing-content">
+
+      <div class="listing-main">
+
+        <div class="listing-meta">
+          <span class="listing-category">Sports Car</span>
+        </div>
+
+        <h1 class="listing-title">2019 Porsche 911 GT3</h1>
+
+        <div class="listing-price">$130,000</div>
+
+        <div class="listing-description">
+          <p>One owner from new, purchased at Porsche of Beverly Hills and dealer maintained for its entire life. This GT3 has never seen a track day — it has been driven exclusively on the street and meticulously cared for since delivery.</p>
+          <p>The car presents in exceptional condition with no paint corrections, no accident history, and all original glass. Guards Red over black leather with Alcantara throughout; the interior shows minimal wear and retains the factory scent.</p>
+          <p>Factory options include the Sport Chrono Package with Porsche Track Precision App, front axle lift system, BOSE surround sound, rear-axle steering, and full LED matrix headlights. The naturally aspirated 4.0-liter flat-six revs freely to 9,000 rpm and sounds extraordinary through the factory sport exhaust.</p>
+          <p>Service records available, two keys, all books and documentation. Located in Los Angeles; serious buyers are welcome to inspect in person.</p>
+        </div>
+
+        <div class="listing-specs">
+          <h2>Specifications</h2>
+          <dl class="specs-grid">
+            <div class="spec-item">
+              <dt>Year</dt>
+              <dd>2019</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Make &amp; Model</dt>
+              <dd>Porsche 911 GT3</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Mileage</dt>
+              <dd>4,200 miles</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Exterior Color</dt>
+              <dd>Guards Red</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Interior</dt>
+              <dd>Black Leather / Alcantara</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Transmission</dt>
+              <dd>PDK (7-speed dual-clutch)</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Engine</dt>
+              <dd>4.0L Flat-Six, 500 hp</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Brakes</dt>
+              <dd>PCCB (Carbon Ceramic)</dd>
+            </div>
+            <div class="spec-item">
+              <dt>VIN</dt>
+              <dd>WP0AC2A96KS165XXX</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Title</dt>
+              <dd>Clean, California</dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+
+      <aside class="listing-sidebar">
+        <div class="inquiry-card">
+          <div class="inquiry-price">$130,000</div>
+          <p class="inquiry-note">Cash or wire transfer. No trades. Serious buyers only — inspection welcome by appointment.</p>
+          <a href="mailto:shuffman@gmail.com?subject=Inquiry%3A%202019%20Porsche%20911%20GT3" class="inquiry-btn">
+            Send Inquiry
+          </a>
+          <div class="inquiry-details">
+            <div class="inquiry-detail">
+              <span>Location</span>
+              <span>Los Angeles, CA</span>
+            </div>
+            <div class="inquiry-detail">
+              <span>Listed</span>
+              <span>May 2026</span>
+            </div>
+            <div class="inquiry-detail">
+              <span>Condition</span>
+              <span>Excellent</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>All items sold as-is. Serious inquiries only.</p>
+    </div>
+  </footer>
+
+  <script>
+    function setHero(btn, src) {
+      const hero = document.getElementById('gallery-hero');
+      hero.style.opacity = '0';
+      setTimeout(() => {
+        hero.src = src;
+        hero.style.opacity = '1';
+      }, 150);
+      document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
